@@ -12,4 +12,7 @@
         <%= post.title %>
         </h1>
     <% } %>
+    <% if (author && post.author) { %>
+        <a href="<%- config.root %><%- 'author/' + post.authorId %>"><h4><%= post.author.name %></h4></a>
+   <% } %>
 <% } %>
